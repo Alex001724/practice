@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты - StudentDev Portfolio</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<div class="page">
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <h1 class="header__title">Кагян Александр</h1>
+        <p class="header__subtitle">Студент-разработчик</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="../index.html" class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="../pages/projects.html" class="nav__link">Проекты</a>
+        </li>
+        <li class="nav__item">
+          <a href="../pages/diary.html" class="nav__link">Дневник</a>
+        </li>
+        <li class="nav__item nav__item--active">
+          <a href="../pages/contacts.html" class="nav__link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="container">
+      <h2 class="section-title">Свяжитесь со мной</h2>
+
+      <!-- Contacts Content -->
+      <div class="contacts__content">
+        <!-- Contact Form -->
+        <section class="contact-form">
+          <h3 class="contact-form__title">Напишите мне</h3>
+          <form class="form" id="contactForm">
+            <div class="form__group">
+              <label for="name" class="form__label">Ваше имя</label>
+              <input type="text" id="name" class="form__input" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Ваш email</label>
+              <input type="email" id="email" class="form__input" placeholder="Введите ваш email" required>
+            </div>
+            <div class="form__group">
+              <label for="subject" class="form__label">Тема сообщения</label>
+              <input type="text" id="subject" class="form__input" placeholder="Введите тему сообщения" required>
+            </div>
+            <div class="form__group">
+              <label for="message" class="form__label">Сообщение</label>
+              <textarea id="message" class="form__textarea" placeholder="Введите ваше сообщение" required></textarea>
+            </div>
+            <button type="submit" class="button button--primary form__button">Отправить сообщение</button>
+          </form>
+        </section>
+
+        <!-- Contact Info -->
+        <section class="contact-info">
+          <h3 class="contact-info__title">Мои контакты</h3>
+          <div class="contact-info__items">
+            <div class="contact-item">
+              <div class="contact-item__icon">📧</div>
+              <div class="contact-item__content">
+                <h4 class="contact-item__title">Email</h4>
+                <p class="contact-item__value">student@edu.mirea.ru</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">📱</div>
+              <div class="contact-item__content">
+                <h4 class="contact-item__title">Телефон</h4>
+                <p class="contact-item__value">+7 (900) 123-45-67</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">💼</div>
+              <div class="contact-item__content">
+                <h4 class="contact-item__title">GitHub</h4>
+                <p class="contact-item__value">github.com/studentdev</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">📍</div>
+              <div class="contact-item__content">
+                <h4 class="contact-item__title">Местоположение</h4>
+                <p class="contact-item__value">Москва, Россия</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon">🕒</div>
+              <div class="contact-item__content">
+                <h4 class="contact-item__title">Время для связи</h4>
+                <p class="contact-item__value">Пн-Пт: 10:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- FAQ Section -->
+      <section class="faq">
+        <h3 class="faq__title">Часто задаваемые вопросы</h3>
+        <div class="faq__items">
+          <div class="faq-item">
+            <h4 class="faq-item__question">Сколько времени занимает ответ на сообщение?</h4>
+            <p class="faq-item__answer">Обычно я отвечаю в течение 24 часов в рабочие дни.</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-item__question">Могу ли я заказать у вас проект?</h4>
+            <p class="faq-item__answer">Да, я открыт для сотрудничества и выполнения проектов.</p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-item__question">Какие технологии вы используете в работе?</h4>
+            <p class="faq-item__answer">HTML, CSS, JavaScript, React, Bootstrap и другие современные технологии.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <p class="footer__copyright">&copy; 2025 StudentDev Portfolio</p>
+        <div class="footer__links">
+          <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+          <a href="https://github.com" class="footer__link">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+</html>

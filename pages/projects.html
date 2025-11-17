@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты - StudentDev Portfolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+<div class="page">
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <h1 class="header__title">Кагян Александр</h1>
+                <p class="header__subtitle">Студент-разработчик</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="../index.html" class="nav__link">Главная</a>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <a href="../pages/projects.html" class="nav__link">Проекты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../pages/diary.html" class="nav__link">Дневник</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../pages/contacts.html" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Projects Header -->
+            <div class="projects__header">
+                <h2 class="section-title">Мои проекты</h2>
+                <div class="projects__filters">
+                    <button class="filter filter--active" data-filter="all">Все</button>
+                    <button class="filter" data-filter="html">HTML/CSS</button>
+                    <button class="filter" data-filter="js">JavaScript</button>
+                    <button class="filter" data-filter="react">React</button>
+                    <button class="filter" data-filter="bootstrap">Bootstrap</button>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects__grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="html">
+                    <div class="project-card__image">
+                        <img src="../images/порт.jpeg" alt="Личный сайт-портфолио">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Личный сайт-портфолио</h3>
+                        <p class="project-card__description">
+                            Полностью адаптивный сайт-портфолио с современным дизайном.
+                            Включает главную страницу, раздел проектов, дневник разработки и контакты.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Адаптивный дизайн</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="js">
+                    <div class="project-card__image">
+                        <img src="../images/Unknown.png" alt="Todo приложение">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Todo приложение</h3>
+                        <p class="project-card__description">
+                            Приложение для управления задачами с возможностью добавления,
+                            редактирования, удаления и фильтрации задач. Данные сохраняются в LocalStorage.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">LocalStorage</span>
+                            <span class="tag">CSS Grid</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" data-category="react">
+                    <div class="project-card__image">
+                        <img src="../images/72548_9.jpg" alt="Интернет-магазин">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Интернет-магазин</h3>
+                        <p class="project-card__description">
+                            Прототип интернет-магазина с корзиной товаров, фильтрацией по категориям
+                            и поиском. Реализована работа с API и управление состоянием приложения.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">React</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Context API</span>
+                            <span class="tag">Hooks</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card" data-category="bootstrap">
+                    <div class="project-card__image">
+                        <img src="../images/Корп.jpeg" alt="Корпоративный сайт">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Корпоративный сайт</h3>
+                        <p class="project-card__description">
+                            Многостраничный корпоративный сайт для IT-компании.
+                            Включает главную страницу, услуги, портфолио и контакты.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">Bootstrap 5</span>
+                            <span class="tag">jQuery</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card" data-category="js">
+                    <div class="project-card__image">
+                        <img src="../images/Погода.jpeg" alt="Погодное приложение">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Погодное приложение</h3>
+                        <p class="project-card__description">
+                            Приложение для просмотра погоды с использованием открытого API.
+                            Показывает текущую погоду, прогноз на 5 дней и детальную информацию.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Async/Await</span>
+                            <span class="tag">Geolocation</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card" data-category="react">
+                    <div class="project-card__image">
+                        <img src="../images/Мини%20соц%20сеть.jpeg" alt="Социальная сеть">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Мини-социальная сеть</h3>
+                        <p class="project-card__description">
+                            Упрощенная версия социальной сети с возможностью публикации постов,
+                            комментариев и лайков. Реализована система аутентификации.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Redux</span>
+                            <span class="tag">Material-UI</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7 -->
+                <article class="project-card" data-category="html">
+                    <div class="project-card__image">
+                        <img src="../images/Лендинг.jpeg" alt="Лендинг страница">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Лендинг для стартапа</h3>
+                        <p class="project-card__description">
+                            Продающая лендинг страница для IT-стартапа.
+                            Включает анимации, формы захвата и адаптивный дизайн.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">GSAP</span>
+                            <span class="tag">Анимации</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8 -->
+                <article class="project-card" data-category="js">
+                    <div class="project-card__image">
+                        <img src="../images/Игра.jpeg" alt="Игра-платформер">
+                    </div>
+                    <div class="project-card__content">
+                        <h3 class="project-card__title">Игра-платформер</h3>
+                        <p class="project-card__description">
+                            2D игра в стиле платформера с физикой, анимациями и системой подсчета очков.
+                            Разработана на чистом JavaScript с использованием Canvas.
+                        </p>
+                        <div class="project-card__tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Canvas</span>
+                            <span class="tag">Game Development</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="button button--primary">Демо</a>
+                            <a href="#" class="button button--outline">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copyright">&copy; 2025 StudentDev Portfolio</p>
+                <div class="footer__links">
+                    <a href="mailto:student@edu.ru" class="footer__link">student@edu.ru</a>
+                    <a href="https://github.com" class="footer__link">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
